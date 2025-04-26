@@ -27,13 +27,12 @@ h1 {
     grid-template-columns: repeat(3, 80px);
     gap: 10px;
     justify-content: center;
-    
     padding: 20px;
     background-color: #3dd2ed;
     border-radius: 15px;
-    
-    
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: auto;
 }
 
 /* Lámpák */
