@@ -6,7 +6,6 @@ export class Lampa {
         this.divElem.classList.add('lampa');
         this.szuloElem = szuloElem;
         this.szuloElem.appendChild(this.divElem);
-
         this.setAllapotMegjelenites();
 
         this.divElem.addEventListener('click', () => {

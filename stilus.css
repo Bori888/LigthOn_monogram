@@ -1,34 +1,97 @@
+/* Általános beállítások */
 body {
+    background-color: #164676; /* halvány kékes háttér */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+main{
+    width: 70%;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    
 }
 
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Játéktér stílusa */
 #jatekter {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
     justify-content: center;
-    margin: 20px 0;
+    
+    padding: 20px;
+    background-color: #3dd2ed;
+    border-radius: 15px;
+    
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Lámpák */
 .lampa {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid #666;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .bekapcsolt {
-    background-color: orange;
+    background-color: rgb(149, 23, 223);
+    
 }
 
 .kikapcsolt {
-    background-color: green;
+    background-color: rgb(33, 171, 33);
+    
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 10px;
+/* Gomb stílusa */
+#ujJatekGomb {
+    background-color: #1f2b95;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#ujJatekGomb:hover {
+    background-color: #45a049;
+}
+
+/* Szövegek */
+#lekapcsoltSzamlalo {
+    font-size: 2rem;
+    color: rgb(151, 20, 239);
+    font-weight: bold;
+}
+
+#uzenet {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #6e07e4;
+    font-weight: bold;
+}
+
+/* Tesztelő szöveg */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid black;
+    padding-top: 10px;
 }
